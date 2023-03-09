@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: slideRight 2s ease;
   }
 
   .contenedor h3{
@@ -50,6 +51,7 @@
     border-radius: 3rem;
     border: 1px solid #1f242d;
     transition: .3s ease;
+    animation: slideLeft 2s ease;
   }
 
   .button p{
@@ -68,5 +70,27 @@
     color: #02ECFF;
     cursor: pointer;
     border: 1px solid #02ECFF;
+    box-shadow: 0 0 1rem #02ECFF;
   }
 
+  @keyframes slideRight {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

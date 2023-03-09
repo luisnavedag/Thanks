@@ -60,7 +60,6 @@
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
-
     transition: .3s ease;
 
   }
@@ -92,5 +91,23 @@
   100%{
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 415px){
+  *{
+    padding: 1rem;
+  }
+  .button{
+    margin-top: -30rem;
+    margin-right: 30rem;
+  }
+  .button p{
+    margin: -1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s ease;
   }
 }
